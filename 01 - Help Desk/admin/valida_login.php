@@ -17,6 +17,8 @@
     // echo '<br>';
     // echo $_POST['senha'];
 
+    session_start();
+
     $usuario_autenticado = false;
 
     $usuarios_app = array(
@@ -31,9 +33,12 @@
     };
 
     if($usuario_autenticado){
-        echo 'Usuário autenticado com sucesso!';
+        //echo 'Usuário autenticado com sucesso!';
+        $_SESSION['autenticado'] = 'SIM';
+        header('Location:home.php');
     }else{
         //echo 'ERRO de Autenticação.';
+        $_SESSION['autenticado'] = 'NÃO';
         header('Location:index.php?login=erro');
     };
 
