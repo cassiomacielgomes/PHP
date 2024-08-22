@@ -1,1 +1,3 @@
-Erro na Impressora#Impressora#Impressora não imprimir, falta tinta na cor preta.
+1#Erro na Impressora#Impressora#Erro na Impressora.
+3#Tela azul no notebook#Hardware#Notebook não liga.
+3#Computador sem conexão#Rede#Teste
